@@ -1,0 +1,29 @@
+matriz = [
+ ['maçã', 'banana','manga'],
+ ['uva', 'kiwi','laranja'],
+ ['maracúja','goiabada','guarana'],
+]
+vogais = "a,e,i,o,u"
+contador = 0
+for linha in matriz:
+ for palavra in linha:
+  for letra in palavra:
+   if letra.lower() in vogais:
+     contador += 1
+consoantes = 'b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z'
+contador2 = 0
+for linha in matriz:
+ for palavra in linha:
+  for letra in palavra:
+   if letra.lower() in consoantes:
+    contador2 += 1 
+letras_especiais = 'ç,á,é,í,ó,,ú,ã,õ,â,ê,ô,û,î'
+contador3 = 0
+for linha in matriz:
+ for palavra in linha:
+  for letra in palavra:
+   if letra.lower() in letras_especiais:
+    contador3 += 1
+print("Total de vogais:",contador)
+print("total de consoantes:",contador2)
+print('total de letras especiais:',contador3)
